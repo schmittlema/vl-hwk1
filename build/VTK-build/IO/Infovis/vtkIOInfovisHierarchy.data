@@ -1,0 +1,17 @@
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkBiomTableReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkChacoGraphReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkDelimitedTextReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkDIMACSGraphReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkDIMACSGraphWriter.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkFixedWidthTextReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkISIReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkMultiNewickTreeReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkNewickTreeReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkNewickTreeWriter.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkPhyloXMLTreeReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkPhyloXMLTreeWriter.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkRISReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkTulipReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkXGMLReader.h;vtkIOInfovis
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/Infovis/vtkXMLTreeReader.h;vtkIOInfovis
+

@@ -1,0 +1,2 @@
+from compileall import compile_dir
+compile_dir("/home/schmittle/Documents/Vision_Learning/build/VTK-build/lib/python2.7/site-packages/mpi4py")

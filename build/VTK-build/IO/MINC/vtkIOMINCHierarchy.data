@@ -1,0 +1,10 @@
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMINCImageAttributes.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMINCImageReader.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMINCImageWriter.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNIObjectReader.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNIObjectWriter.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNITagPointReader.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNITagPointWriter.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNITransformReader.h;vtkIOMINC
+/home/schmittle/Documents/Vision_Learning/build/VTK/IO/MINC/vtkMNITransformWriter.h;vtkIOMINC
+

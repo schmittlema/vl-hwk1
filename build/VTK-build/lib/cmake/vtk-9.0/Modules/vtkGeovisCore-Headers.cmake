@@ -1,0 +1,6 @@
+set(vtkGeovisCore_HEADERS_LOADED 1)
+set(vtkGeovisCore_HEADERS "vtkCompassRepresentation;vtkCompassWidget;vtkGeoAdaptiveArcs;vtkGeoAlignedImageSource;vtkGeoArcs;vtkGeoAssignCoordinates;vtkGeoCamera;vtkGeoFileImageSource;vtkGeoFileTerrainSource;vtkGeoGlobeSource;vtkGeoGraticule;vtkGeoImageNode;vtkGeoInteractorStyle;vtkGeoProjection;vtkGeoProjectionSource;vtkGeoRandomGraphSource;vtkGeoSampleArcs;vtkGeoSource;vtkGeoSphereTransform;vtkGeoTerrain;vtkGeoTerrain2D;vtkGeoTerrainNode;vtkGeoTransform;vtkGeoTreeNode;vtkGeoTreeNodeCache;vtkGlobeSource;vtkGeoAlignedImageRepresentation")
+
+foreach(header ${vtkGeovisCore_HEADERS})
+  set(vtkGeovisCore_HEADER_${header}_EXISTS 1)
+endforeach()

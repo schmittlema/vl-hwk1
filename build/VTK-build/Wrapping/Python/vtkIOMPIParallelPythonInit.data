@@ -1,0 +1,4 @@
+vtkIOMPIParallelPython
+vtkPWindBladeReader
+vtkMPIMultiBlockPLOT3DReader
+vtkIOMPIParallelObjectFactory

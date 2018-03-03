@@ -1,0 +1,6 @@
+vtkFiltersParallelMPIPython
+vtkDistributedDataFilter
+vtkPExtractGrid
+vtkPExtractRectilinearGrid
+vtkPExtractVOI
+vtkStructuredImplicitConnectivity

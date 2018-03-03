@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/Examples/Build/vtkLocal/CMakeTmp/VTK_UNDEFINED_SYMBOLS_ALLOWED/foo.c
+

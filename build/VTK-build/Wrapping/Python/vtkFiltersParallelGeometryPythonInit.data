@@ -1,0 +1,6 @@
+vtkFiltersParallelGeometryPython
+vtkPDataSetGhostGenerator
+vtkPStructuredGridConnectivity
+vtkPStructuredGridGhostDataGenerator
+vtkPUniformGridGhostDataGenerator
+vtkPUnstructuredGridGhostCellsGenerator

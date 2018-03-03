@@ -1,0 +1,4 @@
+vtkFiltersSelectionPython
+vtkKdTreeSelector
+vtkLinearSelector
+vtkCellDistanceSelector

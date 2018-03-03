@@ -1,0 +1,4 @@
+vtkFiltersImagingPython
+vtkPairwiseExtractHistogram2D
+vtkExtractHistogram2D
+vtkComputeHistogram2DOutliers

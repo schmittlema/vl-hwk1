@@ -1,0 +1,11 @@
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageHSIToRGB.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageHSVToRGB.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageYIQToRGB.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageLuminance.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageMapToRGBA.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageMapToWindowLevelColors.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageQuantizeRGBToIndex.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageRGBToHSI.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageRGBToHSV.h;vtkImagingColor
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Color/vtkImageRGBToYIQ.h;vtkImagingColor
+

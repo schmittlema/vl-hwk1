@@ -1,0 +1,9 @@
+vtkFiltersSMPPython
+vtkSMPContourGrid
+vtkSMPMergePoints
+vtkSMPMergePolyDataHelper
+vtkSMPContourGridManyPieces
+vtkThreadedSynchronizedTemplates3D
+vtkThreadedSynchronizedTemplatesCutter3D
+vtkSMPTransform
+vtkSMPWarpVector

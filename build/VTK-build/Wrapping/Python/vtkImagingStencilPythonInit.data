@@ -1,0 +1,8 @@
+vtkImagingStencilPython
+vtkImageStencil
+vtkImageStencilToImage
+vtkImageToImageStencil
+vtkImplicitFunctionToImageStencil
+vtkLassoStencilSource
+vtkPolyDataToImageStencil
+vtkROIStencilSource

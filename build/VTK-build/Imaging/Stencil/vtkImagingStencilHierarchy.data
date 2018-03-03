@@ -1,0 +1,8 @@
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkImageStencil.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkImageStencilToImage.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkImageToImageStencil.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkLassoStencilSource.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkPolyDataToImageStencil.h;vtkImagingStencil
+/home/schmittle/Documents/Vision_Learning/build/VTK/Imaging/Stencil/vtkROIStencilSource.h;vtkImagingStencil
+

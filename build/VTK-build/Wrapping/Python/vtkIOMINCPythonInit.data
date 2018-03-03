@@ -1,0 +1,10 @@
+vtkIOMINCPython
+vtkMINCImageAttributes
+vtkMINCImageReader
+vtkMINCImageWriter
+vtkMNIObjectReader
+vtkMNIObjectWriter
+vtkMNITagPointReader
+vtkMNITagPointWriter
+vtkMNITransformReader
+vtkMNITransformWriter

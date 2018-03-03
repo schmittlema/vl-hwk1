@@ -1,0 +1,8 @@
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkTextureMapToCylinder.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkTextureMapToPlane.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkTextureMapToSphere.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkImplicitTextureCoords.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkThresholdTextureCoords.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkTransformTextureCoords.h;vtkFiltersTexture
+/home/schmittle/Documents/Vision_Learning/build/VTK/Filters/Texture/vtkTriangularTCoords.h;vtkFiltersTexture
+

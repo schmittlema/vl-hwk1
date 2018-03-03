@@ -1,0 +1,2267 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_431a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_431a4.dir/build.make CMakeFiles/cmTC_431a4.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_431a4.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_431a4.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_431a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_431a4.dir/link.txt --verbose=1
+/usr/bin/cc       -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_431a4.dir/CheckSymbolExists.c.o  -o cmTC_431a4 -rdynamic 
+CMakeFiles/cmTC_431a4.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_431a4.dir/build.make:97: recipe for target 'cmTC_431a4' failed
+make[1]: *** [cmTC_431a4] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_431a4/fast' failed
+make: *** [cmTC_431a4/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_88bd2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88bd2.dir/build.make CMakeFiles/cmTC_88bd2.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88bd2.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_88bd2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_88bd2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88bd2.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_88bd2.dir/CheckFunctionExists.c.o  -o cmTC_88bd2 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_88bd2.dir/build.make:97: recipe for target 'cmTC_88bd2' failed
+make[1]: *** [cmTC_88bd2] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_88bd2/fast' failed
+make: *** [cmTC_88bd2/fast] Error 2
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d027b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d027b.dir/build.make CMakeFiles/cmTC_d027b.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d027b.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS___INT64   -o CMakeFiles/cmTC_d027b.dir/kwsysPlatformTestsCXX.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:24:1: error: ‘__int64’ does not name a type
+ __int64 f(__int64 n)
+ ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:30:3: error: ‘__int64’ was not declared in this scope
+   __int64 n = 0;
+   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:31:29: error: ‘n’ was not declared in this scope
+   return static_cast<int>(f(n));
+                             ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:31:30: error: ‘f’ was not declared in this scope
+   return static_cast<int>(f(n));
+                              ^
+CMakeFiles/cmTC_d027b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d027b.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d027b.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d027b/fast' failed
+make: *** [cmTC_d027b/fast] Error 2
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_847cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_847cf.dir/build.make CMakeFiles/cmTC_847cf.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_847cf.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H   -o CMakeFiles/cmTC_847cf.dir/kwsysPlatformTestsCXX.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:196:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^
+CMakeFiles/cmTC_847cf.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_847cf.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_847cf.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_847cf/fast' failed
+make: *** [cmTC_847cf/fast] Error 2
+
+
+Checking whether CXX compiler struct stat has st_mtimespec member failed to compile with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0d54c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d54c.dir/build.make CMakeFiles/cmTC_0d54c.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0d54c.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC   -o CMakeFiles/cmTC_0d54c.dir/kwsysPlatformTestsCXX.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:57:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_sec;
+               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:58:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_nsec;
+               ^
+CMakeFiles/cmTC_0d54c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0d54c.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_0d54c.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0d54c/fast' failed
+make: *** [cmTC_0d54c/fast] Error 2
+
+
+Checking whether CXX compiler has _atoi64 failed to compile with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_932d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_932d8.dir/build.make CMakeFiles/cmTC_932d8.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_932d8.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS__ATOI64   -o CMakeFiles/cmTC_932d8.dir/kwsysPlatformTestsCXX.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:252:38: error: ‘_atoi64’ was not declared in this scope
+   return static_cast<int>(_atoi64(str));
+                                      ^
+CMakeFiles/cmTC_932d8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_932d8.dir/kwsysPlatformTestsCXX.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_932d8.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_932d8/fast' failed
+make: *** [cmTC_932d8/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7068f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7068f.dir/build.make CMakeFiles/cmTC_7068f.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7068f.dir/TestEndianess.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7068f.dir/TestEndianess.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_7068f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7068f.dir/link.txt --verbose=1
+/usr/bin/cc       -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_7068f.dir/TestEndianess.c.o  -o cmTC_7068f -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function getsockname exists in the socket failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e2e53/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e2e53.dir/build.make CMakeFiles/cmTC_e2e53.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2e53.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTC_e2e53.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e2e53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2e53.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getsockname   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_e2e53.dir/CheckFunctionExists.c.o  -o cmTC_e2e53 -rdynamic -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e2e53.dir/build.make:97: recipe for target 'cmTC_e2e53' failed
+make[1]: *** [cmTC_e2e53] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e2e53/fast' failed
+make: *** [cmTC_e2e53/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2d1ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2d1ca.dir/build.make CMakeFiles/cmTC_2d1ca.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2d1ca.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_2d1ca.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_2d1ca.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2d1ca.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2d1ca.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2d1ca/fast' failed
+make: *** [cmTC_2d1ca/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9d5ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d5ef.dir/build.make CMakeFiles/cmTC_9d5ef.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9d5ef.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_9d5ef.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'
+CMakeFiles/cmTC_9d5ef.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9d5ef.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_9d5ef.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9d5ef/fast' failed
+make: *** [cmTC_9d5ef/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e250/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e250.dir/build.make CMakeFiles/cmTC_4e250.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e250.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_4e250.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'
+CMakeFiles/cmTC_4e250.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4e250.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4e250.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4e250/fast' failed
+make: *** [cmTC_4e250/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56ce5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56ce5.dir/build.make CMakeFiles/cmTC_56ce5.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56ce5.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_56ce5.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+CMakeFiles/cmTC_56ce5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_56ce5.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_56ce5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_56ce5/fast' failed
+make: *** [cmTC_56ce5/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3be10/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3be10.dir/build.make CMakeFiles/cmTC_3be10.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3be10.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_3be10.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+CMakeFiles/cmTC_3be10.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3be10.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3be10.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3be10/fast' failed
+make: *** [cmTC_3be10/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f720e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f720e.dir/build.make CMakeFiles/cmTC_f720e.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f720e.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_f720e.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'
+CMakeFiles/cmTC_f720e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f720e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_f720e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f720e/fast' failed
+make: *** [cmTC_f720e/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a6ed1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a6ed1.dir/build.make CMakeFiles/cmTC_a6ed1.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a6ed1.dir/src.cxx.o
+/usr/bin/c++     -w -w -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_a6ed1.dir/src.cxx.o -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+CMakeFiles/cmTC_a6ed1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a6ed1.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a6ed1.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a6ed1/fast' failed
+make: *** [cmTC_a6ed1/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae91c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae91c.dir/build.make CMakeFiles/cmTC_ae91c.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae91c.dir/TestEndianess.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_ae91c.dir/TestEndianess.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_ae91c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae91c.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w    -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_ae91c.dir/TestEndianess.c.o  -o cmTC_ae91c -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file sys/endian.h exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9809a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9809a.dir/build.make CMakeFiles/cmTC_9809a.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9809a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_9809a.dir/CheckIncludeFile.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: sys/endian.h: No such file or directory
+ #include <sys/endian.h>
+                        ^
+compilation terminated.
+CMakeFiles/cmTC_9809a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9809a.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9809a.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9809a/fast' failed
+make: *** [cmTC_9809a/fast] Error 2
+
+
+Determining if the HAVE_BSWAP_16 exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2aa06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2aa06.dir/build.make CMakeFiles/cmTC_2aa06.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2aa06.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_2aa06.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘HAVE_BSWAP_16’ undeclared (first use in this function)
+   return ((int*)(&HAVE_BSWAP_16))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_2aa06.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2aa06.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2aa06.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2aa06/fast' failed
+make: *** [cmTC_2aa06/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <byteswap.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef HAVE_BSWAP_16
+  return ((int*)(&HAVE_BSWAP_16))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the HAVE_BSWAP_32 exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_16211/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16211.dir/build.make CMakeFiles/cmTC_16211.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16211.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_16211.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘HAVE_BSWAP_32’ undeclared (first use in this function)
+   return ((int*)(&HAVE_BSWAP_32))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_16211.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_16211.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_16211.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_16211/fast' failed
+make: *** [cmTC_16211/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <byteswap.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef HAVE_BSWAP_32
+  return ((int*)(&HAVE_BSWAP_32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the HAVE_BSWAP_64 exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9e43/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9e43.dir/build.make CMakeFiles/cmTC_b9e43.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9e43.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_b9e43.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘HAVE_BSWAP_64’ undeclared (first use in this function)
+   return ((int*)(&HAVE_BSWAP_64))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_b9e43.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b9e43.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b9e43.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b9e43/fast' failed
+make: *** [cmTC_b9e43/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <byteswap.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef HAVE_BSWAP_64
+  return ((int*)(&HAVE_BSWAP_64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7ebb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ebb0.dir/build.make CMakeFiles/cmTC_7ebb0.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ebb0.dir/__INT64.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_7ebb0.dir/__INT64.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/__INT64.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/__INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/__INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_7ebb0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7ebb0.dir/__INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_7ebb0.dir/__INT64.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7ebb0/fast' failed
+make: *** [cmTC_7ebb0/fast] Error 2
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/__INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10742/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10742.dir/build.make CMakeFiles/cmTC_10742.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10742.dir/UNSIGNED___INT64.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_10742.dir/UNSIGNED___INT64.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:17:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:17:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:20:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:17:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:21:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:17:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:22:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:17:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:23:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^
+CMakeFiles/cmTC_10742.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_10742.dir/UNSIGNED___INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_10742.dir/UNSIGNED___INT64.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_10742/fast' failed
+make: *** [cmTC_10742/fast] Error 2
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the getrandom exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5fb35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5fb35.dir/build.make CMakeFiles/cmTC_5fb35.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fb35.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_5fb35.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:24: fatal error: sys/random.h: No such file or directory
+ #include <sys/random.h>
+                        ^
+compilation terminated.
+CMakeFiles/cmTC_5fb35.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5fb35.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_5fb35.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5fb35/fast' failed
+make: *** [cmTC_5fb35/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/random.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrandom
+  return ((int*)(&getrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_faa55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_faa55.dir/build.make CMakeFiles/cmTC_faa55.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_faa55.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_faa55.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random_buf’ undeclared (first use in this function)
+   return ((int*)(&arc4random_buf))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_faa55.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_faa55.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_faa55.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_faa55/fast' failed
+make: *** [cmTC_faa55/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6d86/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6d86.dir/build.make CMakeFiles/cmTC_d6d86.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6d86.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_d6d86.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random’ undeclared (first use in this function)
+   return ((int*)(&arc4random))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_d6d86.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d6d86.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d6d86.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d6d86/fast' failed
+make: *** [cmTC_d6d86/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the off_t exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9a3d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9a3d.dir/build.make CMakeFiles/cmTC_a9a3d.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9a3d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_a9a3d.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: expected expression before ‘off_t’
+   return ((int*)(&off_t))[argc];
+                   ^
+CMakeFiles/cmTC_a9a3d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a9a3d.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a9a3d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a9a3d/fast' failed
+make: *** [cmTC_a9a3d/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef off_t
+  return ((int*)(&off_t))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the size_t exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69b5b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69b5b.dir/build.make CMakeFiles/cmTC_69b5b.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_69b5b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_69b5b.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: expected expression before ‘size_t’
+   return ((int*)(&size_t))[argc];
+                   ^
+CMakeFiles/cmTC_69b5b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_69b5b.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_69b5b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_69b5b/fast' failed
+make: *** [cmTC_69b5b/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef size_t
+  return ((int*)(&size_t))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function shl_load exists in the dld;dl failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_58266/fast"
+/usr/bin/make -f CMakeFiles/cmTC_58266.dir/build.make CMakeFiles/cmTC_58266.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58266.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTC_58266.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_58266
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58266.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_58266.dir/CheckFunctionExists.c.o  -o cmTC_58266 -rdynamic -ldld -ldl 
+/usr/bin/ld: cannot find -ldld
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_58266.dir/build.make:97: recipe for target 'cmTC_58266' failed
+make[1]: *** [cmTC_58266] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_58266/fast' failed
+make: *** [cmTC_58266/fast] Error 2
+
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;ansidecl.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_133b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_133b0.dir/build.make CMakeFiles/cmTC_133b0.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_133b0.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_133b0.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:25:22: fatal error: ansidecl.h: No such file or directory
+ #include <ansidecl.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_133b0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_133b0.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_133b0.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_133b0/fast' failed
+make: *** [cmTC_133b0/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <ansidecl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;dl.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2fb4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2fb4f.dir/build.make CMakeFiles/cmTC_2fb4f.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fb4f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_2fb4f.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:16: fatal error: dl.h: No such file or directory
+ #include <dl.h>
+                ^
+compilation terminated.
+CMakeFiles/cmTC_2fb4f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2fb4f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2fb4f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2fb4f/fast' failed
+make: *** [cmTC_2fb4f/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <dl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;fp_class.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4da43/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4da43.dir/build.make CMakeFiles/cmTC_4da43.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4da43.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_4da43.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:22: fatal error: fp_class.h: No such file or directory
+ #include <fp_class.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_4da43.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4da43.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4da43.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4da43/fast' failed
+make: *** [cmTC_4da43/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <fp_class.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;ieeefp.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68c2e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68c2e.dir/build.make CMakeFiles/cmTC_68c2e.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68c2e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_68c2e.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+CMakeFiles/cmTC_68c2e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_68c2e.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_68c2e.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_68c2e/fast' failed
+make: *** [cmTC_68c2e/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_87336/fast"
+/usr/bin/make -f CMakeFiles/cmTC_87336.dir/build.make CMakeFiles/cmTC_87336.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87336.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_87336.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:17: fatal error: nan.h: No such file or directory
+ #include <nan.h>
+                 ^
+compilation terminated.
+CMakeFiles/cmTC_87336.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_87336.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_87336.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_87336/fast' failed
+make: *** [cmTC_87336/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <nan.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;ndir.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_417d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_417d8.dir/build.make CMakeFiles/cmTC_417d8.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_417d8.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_417d8.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:18: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+                  ^
+compilation terminated.
+CMakeFiles/cmTC_417d8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_417d8.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_417d8.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_417d8/fast' failed
+make: *** [cmTC_417d8/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <ndir.h>
+
+
+int main(void){return 0;}
+
+Determining if the fpclass exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40a16/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40a16.dir/build.make CMakeFiles/cmTC_40a16.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40a16.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_40a16.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function)
+   return ((int*)(&fpclass))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_40a16.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_40a16.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_40a16.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_40a16/fast' failed
+make: *** [cmTC_40a16/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fpclass
+  return ((int*)(&fpclass))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fp_class exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_34e0c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_34e0c.dir/build.make CMakeFiles/cmTC_34e0c.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34e0c.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_34e0c.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function)
+   return ((int*)(&fp_class))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_34e0c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_34e0c.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_34e0c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_34e0c/fast' failed
+make: *** [cmTC_34e0c/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fp_class
+  return ((int*)(&fp_class))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _stat exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_797ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_797ac.dir/build.make CMakeFiles/cmTC_797ac.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_797ac.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE  -w -w    -o CMakeFiles/cmTC_797ac.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function)
+   return ((int*)(&_stat))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_797ac.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_797ac.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_797ac.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_797ac/fast' failed
+make: *** [cmTC_797ac/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stat
+  return ((int*)(&_stat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for DIR in sys/ndir.h failed to compile with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b776a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b776a.dir/build.make CMakeFiles/cmTC_b776a.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b776a.dir/platformTestsC.c.o
+/usr/bin/cc  -DTEST_HAVE_SYS_NDIR_H  -w -w    -o CMakeFiles/cmTC_b776a.dir/platformTestsC.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/libxml2/vtklibxml2/platformTestsC.c
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/libxml2/vtklibxml2/platformTestsC.c:82:22: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_b776a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b776a.dir/platformTestsC.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b776a.dir/platformTestsC.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b776a/fast' failed
+make: *** [cmTC_b776a/fast] Error 2
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_186bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_186bd.dir/build.make CMakeFiles/cmTC_186bd.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_186bd.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTC_186bd.dir/CheckIncludeFile.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+CMakeFiles/cmTC_186bd.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_186bd.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_186bd.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_186bd/fast' failed
+make: *** [cmTC_186bd/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4e5f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4e5f8.dir/build.make CMakeFiles/cmTC_4e5f8.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e5f8.dir/TestEndianess.c.o
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -o CMakeFiles/cmTC_4e5f8.dir/TestEndianess.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_4e5f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e5f8.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing    -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_4e5f8.dir/TestEndianess.c.o  -o cmTC_4e5f8 -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f448/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f448.dir/build.make CMakeFiles/cmTC_5f448.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f448.dir/TestEndianess.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_5f448.dir/TestEndianess.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_5f448
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f448.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w    -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_5f448.dir/TestEndianess.c.o  -o cmTC_5f448 -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;io.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbe9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbe9c.dir/build.make CMakeFiles/cmTC_cbe9c.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbe9c.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_cbe9c.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+CMakeFiles/cmTC_cbe9c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cbe9c.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cbe9c.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cbe9c/fast' failed
+make: *** [cmTC_cbe9c/fast] Error 2
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/file.h;sys/ioctl.h;sys/resource.h;sys/stat.h;sys/time.h;sys/types.h;features.h;dirent.h;setjmp.h;stddef.h;stdint.h;unistd.h;winsock2.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_906e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_906e8.dir/build.make CMakeFiles/cmTC_906e8.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_906e8.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_906e8.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:22: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_906e8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_906e8.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_906e8.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_906e8/fast' failed
+make: *** [cmTC_906e8/fast] Error 2
+
+Source:
+/* */
+#include <sys/file.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <features.h>
+#include <dirent.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <winsock2.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_db9d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_db9d4.dir/build.make CMakeFiles/cmTC_db9d4.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db9d4.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w    -o CMakeFiles/cmTC_db9d4.dir/H5_SIZEOF___INT64.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_db9d4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_db9d4.dir/H5_SIZEOF___INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_db9d4.dir/H5_SIZEOF___INT64.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_db9d4/fast' failed
+make: *** [cmTC_db9d4/fast] Error 2
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78c0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78c0a.dir/build.make CMakeFiles/cmTC_78c0a.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78c0a.dir/HDFTests.c.o
+/usr/bin/cc    -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_78c0a.dir/HDFTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:156:29: error: ‘struct tm’ has no member named ‘__tm_gmtoff’
+ SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+                             ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_78c0a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_78c0a.dir/HDFTests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_78c0a.dir/HDFTests.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_78c0a/fast' failed
+make: *** [cmTC_78c0a/fast] Error 2
+
+Performing Other Test HAVE_TM_ZONE failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_85fbc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85fbc.dir/build.make CMakeFiles/cmTC_85fbc.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85fbc.dir/HDFTests.c.o
+/usr/bin/cc    -w -w -DHAVE_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_85fbc.dir/HDFTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c
+Linking C executable cmTC_85fbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85fbc.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DHAVE_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_85fbc.dir/HDFTests.c.o  -o cmTC_85fbc -rdynamic 
+/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_85fbc.dir/build.make:97: recipe for target 'cmTC_85fbc' failed
+make[1]: *** [cmTC_85fbc] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_85fbc/fast' failed
+make: *** [cmTC_85fbc/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TM_TM_ZONE failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6cee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6cee.dir/build.make CMakeFiles/cmTC_e6cee.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6cee.dir/HDFTests.c.o
+/usr/bin/cc    -w -w -DHAVE_STRUCT_TM_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_e6cee.dir/HDFTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c
+Linking C executable cmTC_e6cee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6cee.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DHAVE_STRUCT_TM_TM_ZONE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_e6cee.dir/HDFTests.c.o  -o cmTC_e6cee -rdynamic 
+/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e6cee.dir/build.make:97: recipe for target 'cmTC_e6cee' failed
+make[1]: *** [cmTC_e6cee] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e6cee/fast' failed
+make: *** [cmTC_e6cee/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30bd0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30bd0.dir/build.make CMakeFiles/cmTC_30bd0.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30bd0.dir/HDFTests.c.o
+/usr/bin/cc    -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_30bd0.dir/HDFTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:412:32: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+                                ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_30bd0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_30bd0.dir/HDFTests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_30bd0.dir/HDFTests.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_30bd0/fast' failed
+make: *** [cmTC_30bd0/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da644/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da644.dir/build.make CMakeFiles/cmTC_da644.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da644.dir/HDFTests.c.o
+/usr/bin/cc    -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTC_da644.dir/HDFTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:418:30: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+                              ^
+/home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake_ext_mod/HDFTests.c:12:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+CMakeFiles/cmTC_da644.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_da644.dir/HDFTests.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_da644.dir/HDFTests.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_da644/fast' failed
+make: *** [cmTC_da644/fast] Error 2
+
+Determining if the function _getvideoconfig exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fbe8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fbe8b.dir/build.make CMakeFiles/cmTC_fbe8b.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fbe8b.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTC_fbe8b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fbe8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbe8b.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_fbe8b.dir/CheckFunctionExists.c.o  -o cmTC_fbe8b -rdynamic 
+CMakeFiles/cmTC_fbe8b.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_getvideoconfig'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fbe8b.dir/build.make:97: recipe for target 'cmTC_fbe8b' failed
+make[1]: *** [cmTC_fbe8b] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fbe8b/fast' failed
+make: *** [cmTC_fbe8b/fast] Error 2
+
+
+Determining if the function gettextinfo exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6737d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6737d.dir/build.make CMakeFiles/cmTC_6737d.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6737d.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTC_6737d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6737d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6737d.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_6737d.dir/CheckFunctionExists.c.o  -o cmTC_6737d -rdynamic 
+CMakeFiles/cmTC_6737d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `gettextinfo'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6737d.dir/build.make:97: recipe for target 'cmTC_6737d' failed
+make[1]: *** [cmTC_6737d] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6737d/fast' failed
+make: *** [cmTC_6737d/fast] Error 2
+
+
+Determining if the function _scrsize exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80845/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80845.dir/build.make CMakeFiles/cmTC_80845.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80845.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTC_80845.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_80845
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80845.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_80845.dir/CheckFunctionExists.c.o  -o cmTC_80845 -rdynamic 
+CMakeFiles/cmTC_80845.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_scrsize'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_80845.dir/build.make:97: recipe for target 'cmTC_80845' failed
+make[1]: *** [cmTC_80845] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_80845/fast' failed
+make: *** [cmTC_80845/fast] Error 2
+
+
+Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b77f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b77f9.dir/build.make CMakeFiles/cmTC_b77f9.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b77f9.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTC_b77f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b77f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b77f9.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_b77f9.dir/CheckFunctionExists.c.o  -o cmTC_b77f9 -rdynamic 
+CMakeFiles/cmTC_b77f9.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `GetConsoleScreenBufferInfo'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b77f9.dir/build.make:97: recipe for target 'cmTC_b77f9' failed
+make[1]: *** [cmTC_b77f9] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b77f9/fast' failed
+make: *** [cmTC_b77f9/fast] Error 2
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fcea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fcea.dir/build.make CMakeFiles/cmTC_1fcea.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fcea.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTC_1fcea.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1fcea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fcea.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_1fcea.dir/CheckFunctionExists.c.o  -o cmTC_1fcea -rdynamic 
+CMakeFiles/cmTC_1fcea.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1fcea.dir/build.make:97: recipe for target 'cmTC_1fcea' failed
+make[1]: *** [cmTC_1fcea] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1fcea/fast' failed
+make: *** [cmTC_1fcea/fast] Error 2
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92178/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92178.dir/build.make CMakeFiles/cmTC_92178.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92178.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTC_92178.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_92178
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92178.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_92178.dir/CheckFunctionExists.c.o  -o cmTC_92178 -rdynamic 
+CMakeFiles/cmTC_92178.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_92178.dir/build.make:97: recipe for target 'cmTC_92178' failed
+make[1]: *** [cmTC_92178] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_92178/fast' failed
+make: *** [cmTC_92178/fast] Error 2
+
+
+Test H5_LDOUBLE_TO_LONG_SPECIAL Run failed with the following output and exit code:
+ Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1656/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1656.dir/build.make CMakeFiles/cmTC_f1656.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1656.dir/ConversionTests.c.o
+/usr/bin/cc    -w -w -DH5_LDOUBLE_TO_LONG_SPECIAL_TEST   -o CMakeFiles/cmTC_f1656.dir/ConversionTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_f1656
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1656.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DH5_LDOUBLE_TO_LONG_SPECIAL_TEST   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_f1656.dir/ConversionTests.c.o  -o cmTC_f1656 -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+Test H5_LONG_TO_LDOUBLE_SPECIAL Run failed with the following output and exit code:
+ Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2ad7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2ad7.dir/build.make CMakeFiles/cmTC_a2ad7.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2ad7.dir/ConversionTests.c.o
+/usr/bin/cc    -w -w -DH5_LONG_TO_LDOUBLE_SPECIAL_TEST   -o CMakeFiles/cmTC_a2ad7.dir/ConversionTests.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTC_a2ad7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2ad7.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DH5_LONG_TO_LDOUBLE_SPECIAL_TEST   -Wl,-lc  -Wl,-lc    CMakeFiles/cmTC_a2ad7.dir/ConversionTests.c.o  -o cmTC_a2ad7 -rdynamic 
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cdac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cdac.dir/build.make CMakeFiles/cmTC_6cdac.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6cdac.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_6cdac.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strlcat’ undeclared (first use in this function)
+   return ((int*)(&strlcat))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_6cdac.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6cdac.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_6cdac.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6cdac/fast' failed
+make: *** [cmTC_6cdac/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the st_blocksize exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8e4c0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e4c0.dir/build.make CMakeFiles/cmTC_8e4c0.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e4c0.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_8e4c0.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘st_blocksize’ undeclared (first use in this function)
+   return ((int*)(&st_blocksize))[argc];
+                   ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_8e4c0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8e4c0.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8e4c0.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8e4c0/fast' failed
+make: *** [cmTC_8e4c0/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/stat.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef st_blocksize
+  return ((int*)(&st_blocksize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the H5free_memory exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb1ea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb1ea.dir/build.make CMakeFiles/cmTC_cb1ea.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb1ea.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_cb1ea.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:22: fatal error: vtk_hdf5.h: No such file or directory
+ #include <vtk_hdf5.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_cb1ea.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cb1ea.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cb1ea.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cb1ea/fast' failed
+make: *** [cmTC_cb1ea/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <vtk_hdf5.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef H5free_memory
+  return ((int*)(&H5free_memory))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the H5Pset_all_coll_metadata_ops exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45de8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45de8.dir/build.make CMakeFiles/cmTC_45de8.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45de8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_45de8.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:22: fatal error: vtk_hdf5.h: No such file or directory
+ #include <vtk_hdf5.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_45de8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_45de8.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_45de8.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45de8/fast' failed
+make: *** [cmTC_45de8/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <vtk_hdf5.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef H5Pset_all_coll_metadata_ops
+  return ((int*)(&H5Pset_all_coll_metadata_ops))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the H5Pset_libver_bounds exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_52f64/fast"
+/usr/bin/make -f CMakeFiles/cmTC_52f64.dir/build.make CMakeFiles/cmTC_52f64.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52f64.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_52f64.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:22: fatal error: vtk_hdf5.h: No such file or directory
+ #include <vtk_hdf5.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_52f64.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_52f64.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_52f64.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_52f64/fast' failed
+make: *** [cmTC_52f64/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <vtk_hdf5.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef H5Pset_libver_bounds
+  return ((int*)(&H5Pset_libver_bounds))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the HDF5_PARALLEL exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_526d1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_526d1.dir/build.make CMakeFiles/cmTC_526d1.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_526d1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_526d1.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:22: fatal error: vtk_hdf5.h: No such file or directory
+ #include <vtk_hdf5.h>
+                      ^
+compilation terminated.
+CMakeFiles/cmTC_526d1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_526d1.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_526d1.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_526d1/fast' failed
+make: *** [cmTC_526d1/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <vtk_hdf5.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef HDF5_PARALLEL
+  return ((int*)(&HDF5_PARALLEL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of longlong failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4bcaa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4bcaa.dir/build.make CMakeFiles/cmTC_4bcaa.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4bcaa.dir/HAVE_LONGLONG.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_4bcaa.dir/HAVE_LONGLONG.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_LONGLONG.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_LONGLONG.c:17:22: error: ‘longlong’ undeclared here (not in a function)
+ #define SIZE (sizeof(longlong))
+                      ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_LONGLONG.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_4bcaa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4bcaa.dir/HAVE_LONGLONG.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4bcaa.dir/HAVE_LONGLONG.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4bcaa/fast' failed
+make: *** [cmTC_4bcaa/fast] Error 2
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_LONGLONG.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(longlong))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of uchar failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d2d3f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d2d3f.dir/build.make CMakeFiles/cmTC_d2d3f.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2d3f.dir/HAVE_UCHAR.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_d2d3f.dir/HAVE_UCHAR.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_UCHAR.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_UCHAR.c:17:22: error: ‘uchar’ undeclared here (not in a function)
+ #define SIZE (sizeof(uchar))
+                      ^
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_UCHAR.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_d2d3f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d2d3f.dir/HAVE_UCHAR.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d2d3f.dir/HAVE_UCHAR.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d2d3f/fast' failed
+make: *** [cmTC_d2d3f/fast] Error 2
+
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CheckTypeSize/HAVE_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files jni.h exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35c44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35c44.dir/build.make CMakeFiles/cmTC_35c44.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35c44.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_35c44.dir/CheckIncludeFiles.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:17: fatal error: jni.h: No such file or directory
+ #include <jni.h>
+                 ^
+compilation terminated.
+CMakeFiles/cmTC_35c44.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_35c44.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_35c44.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_35c44/fast' failed
+make: *** [cmTC_35c44/fast] Error 2
+
+Source:
+/* */
+#include <jni.h>
+
+
+int main(void){return 0;}
+
+Determining if the PTHREAD_MUTEX_RECURSIVE exist failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_151cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_151cc.dir/build.make CMakeFiles/cmTC_151cc.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_151cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -w -w    -o CMakeFiles/cmTC_151cc.dir/CheckSymbolExists.c.o   -c /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
+   return ((int*)(&PTHREAD_MUTEX_RECURSIVE))[argc];
+                  ^
+CMakeFiles/cmTC_151cc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_151cc.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_151cc.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_151cc/fast' failed
+make: *** [cmTC_151cc/fast] Error 2
+
+File /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PTHREAD_MUTEX_RECURSIVE
+  return ((int*)(&PTHREAD_MUTEX_RECURSIVE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function MPI_Type_create_f90_integer exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfcf2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfcf2.dir/build.make CMakeFiles/cmTC_cfcf2.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfcf2.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -w -DCHECK_FUNCTION_EXISTS=MPI_Type_create_f90_integer   -o CMakeFiles/cmTC_cfcf2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cfcf2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfcf2.dir/link.txt --verbose=1
+/usr/bin/cc    -w -DCHECK_FUNCTION_EXISTS=MPI_Type_create_f90_integer    CMakeFiles/cmTC_cfcf2.dir/CheckFunctionExists.c.o  -o cmTC_cfcf2 -rdynamic 
+CMakeFiles/cmTC_cfcf2.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `MPI_Type_create_f90_integer'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cfcf2.dir/build.make:97: recipe for target 'cmTC_cfcf2' failed
+make[1]: *** [cmTC_cfcf2] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cfcf2/fast' failed
+make: *** [cmTC_cfcf2/fast] Error 2
+
+
+Determining if the function MPI_Status_fc2 exists failed with the following output:
+Change Dir: /home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f956f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f956f.dir/build.make CMakeFiles/cmTC_f956f.dir/build
+make[1]: Entering directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f956f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -w -DCHECK_FUNCTION_EXISTS=MPI_Status_fc2   -o CMakeFiles/cmTC_f956f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f956f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f956f.dir/link.txt --verbose=1
+/usr/bin/cc    -w -DCHECK_FUNCTION_EXISTS=MPI_Status_fc2    CMakeFiles/cmTC_f956f.dir/CheckFunctionExists.c.o  -o cmTC_f956f -rdynamic 
+CMakeFiles/cmTC_f956f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `MPI_Status_fc2'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f956f.dir/build.make:97: recipe for target 'cmTC_f956f' failed
+make[1]: *** [cmTC_f956f] Error 1
+make[1]: Leaving directory '/home/schmittle/Documents/Vision_Learning/build/VTK-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f956f/fast' failed
+make: *** [cmTC_f956f/fast] Error 2
+
+
